@@ -215,6 +215,18 @@
   color: black;
 }
 
+#center_box {
+  display: flex;
+  justify-content: center;
+}
+
+#center_box_2 {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
 footer {
     background-color: #f8f9fa;
     padding: 20px 0;
