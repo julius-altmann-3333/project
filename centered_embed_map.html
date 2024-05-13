@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Google Maps</title>
+<style>
+    .map-container {
+        position: relative;
+        width: 100%;
+        max-width: 600px; /* adjust as needed */
+        margin: 0 auto; /* center horizontally */
+        max-height: 300px; /* maximum height */
+        overflow: hidden; /* prevent scrollbars */
+    }
+    .map-container iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6512025.221661665!2d-124.60387277299026!3d37.159836706306606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sKalifornien%2C%20USA!5e0!3m2!1sde!2sde!4v1714924784578!5m2!1sde!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+</body>
+</html>

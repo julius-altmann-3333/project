@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Real Estate 10</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars-offcanvas/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="C:\Users\a\Desktop\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-h9TZL+RY6vX6TmbWxnFxl8WtStFs+U3wSwe+Mr50F2z3/n5p88J2FnhFQ2IVn+/r9GzgQWHC+Q0KoWr2YDDd8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../assets/js/color-modes.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="C:\Users\a\Desktop\script.js" defer></script>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const cookieBanner = document.getElementById("cookie-banner");
+      const cookieForm = document.getElementById("cookie-form");
+
+      // Function to show the cookie banner
+      function showBanner() {
+        cookieBanner.style.display = "block";
+      }
+
+      // Function to hide the cookie banner
+      function hideBanner() {
+        cookieBanner.style.display = "none";
+      }
+
+      // Function to check if cookie is accepted
+      function isCookieAccepted() {
+        return document.cookie.split(';').some((item) => item.trim().startsWith('cookieAccepted='));
+      }
+
+      // Function to set cookie
+      function setCookie() {
+        document.cookie = "cookieAccepted=true; path=/;";
+      }
+
+      // Event listener for button click to close the banner
+      document.getElementById("close-btn").addEventListener("click", function() {
+        hideBanner();
+      });
+
+      // Event listener for button click to confirm and hide banner
+      document.getElementById("confirm-btn").addEventListener("click", function() {
+        if (document.getElementById("exampleCheck1").checked) {
+          // If terms and conditions accepted, set cookie and hide banner
+          setCookie();
+          hideBanner();
+        } else {
+          // If terms and conditions not accepted, show error message
+          document.getElementById("exampleCheck1").classList.add("is-invalid");
+        }
+      });
+
+      // Check if the cookie is accepted
+      if (!isCookieAccepted()) {
+        showBanner();
+      }
+    });
+  </script>
+    
+    <style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+
+      /* Hide the carousel indicators */
+    .carousel-indicators {
+        display: none;
+    }
+    /* Style for thumbnails */
+    .carousel-thumbnails img {
+        max-width: 100px;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.overflowslidername {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slider-item {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust the width as needed */
+    height: 300px;
+    margin-right: 20px; /* Adjust the spacing between items */
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.slider-item img {
+    max-width: 100%;
+    max-height: 200px;
+    height: auto;
+}
+
+.slider-item h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.slider-item a.button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.slider-item a.button:hover {
+    background-color: #0056b3;
+}
+
+.overflowslidername .slider-item {
+    width: 300px;
+    height: auto;
+    border: 1px solid #000;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+
+#box_top {
+  width: 100%;
+  height: 70%;
+} 
+
+#box_bottom {
+  width: 100%;
+  height: 30%;
+} 
+
+@media only screen and (max-width: 600px) {
+    .overflowslidername .slider-item {
+      width: calc(100% - 20px); /* Adjust for margin */
+      margin: 0 10px 10px 0;
+    }
+  }
+
+
+.tab-pane {
+  height:300px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    overflow: hidden; /* Hide any content that overflows */
+    white-space: nowrap; /* Prevent wrapping of text */
+}
+
+.footer-logo {
+    max-width: 100px;
+    margin-bottom: 20px; /* Increase spacing between logo and text */
+}
+
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+    
+}
+
+ /* Increase spacing between links and text */
+
+.footer-links li {
+    margin-bottom: 10px;
+    }
+
+.social-icons {
+    list-style: none;
+    padding-left: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #333; /* Adjust icon color */
+    font-size: 24px; /* Adjust icon size */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.horizontal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Add margin: 0; to remove default margin */
+}
+
+.horizontal-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+    #cookie-banner {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 600px;
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+    }
+    .custom-checkbox {
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    .close-btn {
+      float:right;
+      top: 10px;
+      right: 10px;
+      width:30px;
+      height:30px;
+      cursor: pointer;
+      border: 1px solid black;
+    }
+   
+     #scrollToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: 2px solid black; /* Black border */
+      outline: none;
+      background-color: rgba(128, 128, 128, 0.1); /* Transparent background with 10% opacity */
+      color: black; /* Text color */
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 0;
+      opacity:70%;
+    }
+    #scrollToTopBtn:hover {
+      background-color: rgba(128, 128, 128, 0.5); /* Hover background color with increased opacity */
+    }
+    #scrollToTopBtn:before {
+      content: '';
+      position: absolute;
+      top: calc(50% - 6px); /* Adjust the value to vertically center the triangle */
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(180deg);
+      border-top: 12px solid black; /* Black triangle borders */
+      border-bottom: 12px solid transparent;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+    }
+    </style>
+</head>
+<body>
+
+   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+   
+<main>
+  <nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="C:\Users\a\Desktop\index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="C:\Users\a\Desktop\index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="C:\Users\a\Desktop\index_cars.html">Cars</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="C:\Users\a\Desktop\index_real_estate.html">Real Estate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="C:\Users\a\Desktop\index_yachts.html">Yachts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+<div class="container mt-5">
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel" data-interval="5000"> <!-- Adjust data-interval as needed (in milliseconds) -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="C:\Users\a\Desktop\Images\Real Estate 1.jpg" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="C:\Users\a\Desktop\Images\Real Estate 2.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="C:\Users\a\Desktop\Images\Real Estate 3.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+      <div class="carousel-item">
+        <img src="C:\Users\a\Desktop\Images\Real Estate 4.jpg" class="d-block w-100" alt="Slide 4">
+      </div>
+      <div class="carousel-item">
+        <img src="C:\Users\a\Desktop\Images\Real Estate 5.jpg" class="d-block w-100" alt="Slide 5">
+      </div>
+      <div class="carousel-item">
+        <img src="C:\Users\a\Desktop\Images\Real Estate 6.jpg" class="d-block w-100" alt="Slide 6">
+      </div>
+      <div class="carousel-item">
+        <img src="C:\Users\a\Desktop\Images\Real Estate 7.jpg" class="d-block w-100" alt="Slide 7">
+      </div>
+      <div class="carousel-item">
+        <img src="C:\Users\a\Desktop\Images\Real Estate 8.jpg" class="d-block w-100" alt="Slide 8">
+      </div>
+      <div class="carousel-item">
+        <img src="C:\Users\a\Desktop\Images\Real Estate 9.jpg" class="d-block w-100" alt="Slide 9">
+      </div>
+      <div class="carousel-item">
+        <img src="C:\Users\a\Desktop\Images\Real Estate 10.jpg" class="d-block w-100" alt="Slide 10">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Thumbnails -->
+  <div class="carousel-thumbnails">
+    <img src="C:\Users\a\Desktop\Images\Real Estate 1.jpg" data-target="#carouselExampleIndicators" data-slide-to="0" class="selected">
+    <img src="C:\Users\a\Desktop\Images\Real Estate 2.jpg" data-target="#carouselExampleIndicators" data-slide-to="1" alt="Thumbnail 2">
+    <img src="C:\Users\a\Desktop\Images\Real Estate 3.jpg" data-target="#carouselExampleIndicators" data-slide-to="2" alt="Thumbnail 3">
+    <img src="C:\Users\a\Desktop\Images\Real Estate 4.jpg" data-target="#carouselExampleIndicators" data-slide-to="3" alt="Thumbnail 4">
+    <img src="C:\Users\a\Desktop\Images\Real Estate 5.jpg" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Thumbnail 5">
+    <img src="C:\Users\a\Desktop\Images\Real Estate 6.jpg" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Thumbnail 6">
+    <img src="C:\Users\a\Desktop\Images\Real Estate 7.jpg" data-target="#carouselExampleIndicators" data-slide-to="6" alt="Thumbnail 7">
+    <img src="C:\Users\a\Desktop\Images\Real Estate 8.jpg" data-target="#carouselExampleIndicators" data-slide-to="7" alt="Thumbnail 8">
+    <img src="C:\Users\a\Desktop\Images\Real Estate 9.jpg" data-target="#carouselExampleIndicators" data-slide-to="8" alt="Thumbnail 9">
+    <img src="C:\Users\a\Desktop\Images\Real Estate 10.jpg" data-target="#carouselExampleIndicators" data-slide-to="9" alt="Thumbnail 10">
+  </div>
+</div>
+
+<div class="container" id="headings" style="margin:auto;">
+  <div id="heading"><h1>Corvette Stingray</h1></div>
+  <div id="subheading" style="display:flex;">
+    <h2>300.000€</h2>
+    <p style="margin-left:10px; margin-right:10px;">|</p>
+    <h2>Berlin</h2>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Table</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Column 1</th>
+        <th scope="col">Column 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 3, Cell 1</td>
+        <td>Row 3, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 4, Cell 1</td>
+        <td>Row 4, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 5, Cell 1</td>
+        <td>Row 5, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 6, Cell 1</td>
+        <td>Row 6, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 7, Cell 1</td>
+        <td>Row 7, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 8, Cell 1</td>
+        <td>Row 8, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 9, Cell 1</td>
+        <td>Row 9, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 10, Cell 1</td>
+        <td>Row 10, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 11, Cell 1</td>
+        <td>Row 11, Cell 2</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+    <div class="overflowslidername">
+        <div class="slider-item">
+            <div id="box_top">
+            <img src="C:\Users\a\Desktop\Images\Real Estate 1.jpg">
+            </div>
+            <div id="box_bottom">
+            <h2>Real Estate 1</h2>
+            <a href="C:\Users\a\Desktop\index_real_estate_1.html" class="button">Real Estate 1</a>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div id="box_top">
+            <img src="C:\Users\a\Desktop\Images\Real Estate 2.jpg">
+            </div>
+            <div id="box_bottom">
+            <h2>Real Estate 2</h2>
+            <a href="C:\Users\a\Desktop\index_real_estate_2.html" class="button">Real Estate 2</a>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div id="box_top">
+            <img src="C:\Users\a\Desktop\Images\Real Estate 3.jpg">
+            </div>
+            <div id="box_bottom">
+            <h2>Real Estate 3</h2>
+            <a href="C:\Users\a\Desktop\index_real_estate_3.html" class="button">Real Estate 3</a>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div id="box_top">
+            <img src="C:\Users\a\Desktop\Images\Real Estate 4.jpg">
+            </div>
+            <div id="box_bottom">
+            <h2>Real Estate 4</h2>
+            <a href="C:\Users\a\Desktop\index_real_estate_4.html" class="button">Real Estate 4</a>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div id="box_top">
+            <img src="C:\Users\a\Desktop\Images\Real Estate 5.jpg">
+            </div>
+            <div id="box_bottom">
+            <h2>Real Estate 5</h2>
+            <a href="C:\Users\a\Desktop\index_real_estate_5.html" class="button">Real Estate 5</a>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div id="box_top">
+            <img src="C:\Users\a\Desktop\Images\Real Estate 6.jpg">
+            </div>
+            <div id="box_bottom">
+            <h2>Real Estate 6</h2>
+            <a href="C:\Users\a\Desktop\index_real_estate_6.html" class="button">Real Estate 6</a>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div id="box_top">
+            <img src="C:\Users\a\Desktop\Images\Real Estate 7.jpg">
+            </div>
+            <div id="box_bottom">
+            <h2>Real Estate 7</h2>
+            <a href="C:\Users\a\Desktop\index_real_estate_7.html" class="button">Real Estate 7</a>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div id="box_top">
+            <img src="C:\Users\a\Desktop\Images\Real Estate 8.jpg">
+            </div>
+            <div id="box_bottom">
+            <h2>Real Estate 8</h2>
+            <a href="C:\Users\a\Desktop\index_real_estate_8.html" class="button">Real Estate 8</a>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div id="box_top">
+            <img src="C:\Users\a\Desktop\Images\Real Estate 9.jpg">
+            </div>
+            <div id="box_bottom">
+            <h2>Real Estate 9</h2>
+            <a href="C:\Users\a\Desktop\index_real_estate_9.html" class="button">Real Estate 9</a>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div id="box_top">
+            <img src="C:\Users\a\Desktop\Images\Real Estate 10.jpg">
+            </div>
+            <div id="box_bottom">
+            <h2>Real Estate 10</h2>
+            <a href="C:\Users\a\Desktop\index_real_estate_10.html" class="button">Real Estate 10</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <h2>Contact Us</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject:</label>
+      <input type="text" class="form-control" id="subject" placeholder="Enter the subject" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+    </div>
+    <div class="form-group">
+      <label for="company">Company:</label>
+      <input type="text" class="form-control" id="company" placeholder="Enter your company name">
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+    </div>
+    <div class="form-group">
+      <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="logo.png" alt="Logo" class="footer-logo">
+        <p>123 Main St, City, Country</p>
+        <p>Email: example@example.com</p>
+        <p>Phone: +1234567890</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li style="list-style-type: none; padding: 0; margin: 0;"><a href="#" style="text-decoration: none; color: black;" onmouseover="this.style.color='grey'" onmouseout="this.style.color='black'">Home</a></li>
+          <li style="list-style-type: none; padding: 0; margin: 0;"><a href="#" style="text-decoration: none; color: black;" onmouseover="this.style.color='grey'" onmouseout="this.style.color='black'">About Us</a></li>
+          <li style="list-style-type: none; padding: 0; margin: 0;"><a href="#" style="text-decoration: none; color: black;" onmouseover="this.style.color='grey'" onmouseout="this.style.color='black'">Services</a></li>
+          <li style="list-style-type: none; padding: 0; margin: 0;"><a href="#" style="text-decoration: none; color: black;" onmouseover="this.style.color='grey'" onmouseout="this.style.color='black'">Portfolio</a></li>
+          <li style="list-style-type: none; padding: 0; margin: 0;"><a href="#" style="text-decoration: none; color: black;" onmouseover="this.style.color='grey'" onmouseout="this.style.color='black'">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <ul class="social-icons horizontal-list">
+            <li style="list-style-type: none; padding: 0; margin: 0;"><a href="#"><img src="C:\Users\a\Desktop\Images\facebook.png" width="50" height="50"></a></li>
+            <li style="list-style-type: none; padding: 0; margin: 0;"><a href="#"><img src="C:\Users\a\Desktop\Images\youtube.png" width="50" height="50"></a></li>
+            <li style="list-style-type: none; padding: 0; margin: 0;"><a href="#"><img src="C:\Users\a\Desktop\Images\instagram.png" width="50" height="50"></a></li>
+            <li style="list-style-type: none; padding: 0; margin: 0;"><a href="#"><img src="C:\Users\a\Desktop\Images\whatsapp.png" width="50" height="50"></a></li>
+          </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>&copy; 2024 Julius Altmann. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!--
+<div id="cookie-banner" class="cookie-popup">
+    <div class="close-btn" id="close-btn" onclick="closePopup()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" style="width:100%; height:100%;">
+  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+</svg></div>
+    <div class="row">
+      <div class="col">
+        <div>
+          <p>This website uses cookies to ensure you get the best experience on our website. By clicking 'Confirm' below, you agree to our use of cookies as described in our Privacy Policy.</p>
+        </div>
+        <form id="cookie-form">
+          <div class="custom-checkbox mb-3">
+            <input type="checkbox" id="option1" name="option1">
+            <label for="option1">Option 1</label>
+          </div>
+          <div class="custom-checkbox mb-3">
+            <input type="checkbox" id="option2" name="option2">
+            <label for="option2">Option 2</label>
+          </div>
+          <div class="custom-checkbox mb-3">
+            <input type="checkbox" id="option3" name="option3">
+            <label for="option3">Option 3</label>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1">I accept the terms and conditions.</label>
+            <div class="invalid-feedback">You must accept the terms and conditions.</div>
+          </div>
+          <button type="button" id="confirm-btn" class="btn btn-primary btn-block">Confirm</button>
+        </form>
+      </div>
+    </div>
+  </div>
+-->
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"></button>
+
+</main>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  var overflowslidername = document.querySelector('.overflowslidername');
+
+  var isDown = false;
+  var startX;
+  var scrollLeft;
+
+  overflowslidername.addEventListener('mousedown', function(e) {
+    isDown = true;
+    startX = e.pageX - overflowslidername.offsetLeft;
+    scrollLeft = overflowslidername.scrollLeft;
+  });
+
+  overflowslidername.addEventListener('mouseleave', function() {
+    isDown = false;
+  });
+
+  overflowslidername.addEventListener('mouseup', function() {
+    isDown = false;
+  });
+
+  overflowslidername.addEventListener('mousemove', function(e) {
+    if (!isDown) return;
+    e.preventDefault();
+    var x = e.pageX - overflowslidername.offsetLeft;
+    var walk = (x - startX) * 2; // Adjust the multiplier to control scrolling speed
+    overflowslidername.scrollLeft = scrollLeft - walk;
+  });
+
+  // For touch devices
+  overflowslidername.addEventListener('touchstart', function(e) {
+    isDown = true;
+    startX = e.touches[0].pageX - overflowslidername.offsetLeft;
+    scrollLeft = overflowslidername.scrollLeft;
+  });
+
+  overflowslidername.addEventListener('touchend', function() {
+    isDown = false;
+  });
+
+  overflowslidername.addEventListener('touchmove', function(e) {
+    if (!isDown) return;
+    e.preventDefault();
+    var x = e.touches[0].pageX - overflowslidername.offsetLeft;
+    var walk = (x - startX) * 2; // Adjust the multiplier to control scrolling speed
+    overflowslidername.scrollLeft = scrollLeft - walk;
+  });
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $("#myTab a").click(function(e){
+        e.preventDefault();
+        $(this).tab("show");
+    });
+});
+</script>
+
+
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scrollToTopBtn").style.display = "block";
+    } else {
+      document.getElementById("scrollToTopBtn").style.display = "none";
+    }
+  }
+
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<script>
+  // JavaScript to handle closing the popup
+  function closePopup() {
+    var popup = document.getElementById("cookie-popup");
+    popup.style.display = "none"; // Hide the popup
+  }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Gallery</title>
+    <style>
+        .image-box {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        .dynamic-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="showDynamicContent(0)">Show Image 1</button>
+<button onclick="showDynamicContent(1)">Show Image 2</button>
+<button onclick="showDynamicContent(2)">Show Image 3</button>
+<button onclick="showDynamicContent(3)">Show Image 4</button>
+<button onclick="showDynamicContent(4)">Show Image 5</button>
+
+<div id="dynamicContent" class="dynamic-content">
+    <!-- Image boxes will be displayed here -->
+</div>
+
+<script>
+    function showDynamicContent(index) {
+        var imageUrls = [
+            "image1.jpg",
+            "image2.jpg",
+            "image3.jpg",
+            "image4.jpg",
+            "image5.jpg"
+        ]; // URLs of your images
+
+        var contentContainer = document.getElementById("dynamicContent");
+
+        // Clear any existing content
+        contentContainer.innerHTML = "";
+
+        // Create a div box for the image
+        var imageBox = document.createElement("div");
+        imageBox.className = "image-box";
+
+        // Create an img element and set its src to the specified image URL
+        var img = document.createElement("img");
+        img.src = imageUrls[index];
+
+        // Create a text field to display the index of the image
+        var textField = document.createElement("input");
+        textField.type = "text";
+        textField.value = "Image " + (index + 1); // Displaying image index starting from 1
+
+        // Append img and text field to the image box
+        imageBox.appendChild(img);
+        imageBox.appendChild(textField);
+
+        // Append image box to the content container
+        contentContainer.appendChild(imageBox);
+
+        // Display the container
+        contentContainer.style.display = "block";
+    }
+</script>
+
+</body>
+</html>
