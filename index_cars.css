@@ -266,3 +266,120 @@
         width: 100%; /* Each box takes 100% of the container's width */
     }
 }
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    overflow: hidden; /* Hide any content that overflows */
+    white-space: nowrap; /* Prevent wrapping of text */
+}
+
+.footer-logo {
+    max-width: 100px;
+    margin-bottom: 20px; /* Increase spacing between logo and text */
+}
+
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+    
+}
+
+ /* Increase spacing between links and text */
+
+.footer-links li {
+    margin-bottom: 10px;
+    }
+
+.social-icons {
+    list-style: none;
+    padding-left: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #333; /* Adjust icon color */
+    font-size: 24px; /* Adjust icon size */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.horizontal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Add margin: 0; to remove default margin */
+}
+
+.horizontal-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+    #cookie-banner {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 600px;
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+    }
+    .custom-checkbox {
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    .close-btn {
+      float:right;
+      top: 10px;
+      right: 10px;
+      width:30px;
+      height:30px;
+      cursor: pointer;
+      border: 1px solid black;
+    }
+   
+     #scrollToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: 2px solid black; /* Black border */
+      outline: none;
+      background-color: rgba(128, 128, 128, 0.1); /* Transparent background with 10% opacity */
+      color: black; /* Text color */
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 0;
+      opacity:70%;
+    }
+    #scrollToTopBtn:hover {
+      background-color: rgba(128, 128, 128, 0.5); /* Hover background color with increased opacity */
+    }
+    #scrollToTopBtn:before {
+      content: '';
+      position: absolute;
+      top: calc(50% - 6px); /* Adjust the value to vertically center the triangle */
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(180deg);
+      border-top: 12px solid black; /* Black triangle borders */
+      border-bottom: 12px solid transparent;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+    }
