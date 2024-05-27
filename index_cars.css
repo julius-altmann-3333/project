@@ -186,14 +186,10 @@
     }
 }
 
-.tab-pane {
-    height: 300px;
-}
-
 .my-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Corrected from align-items: flex-start; */
+    align-items: flex-start;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -207,19 +203,18 @@
     justify-content: center;
 }
 
-
-.my-company-card,
-.my-iframe {
+.my-company-card {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    width: 100%; /* Each box takes 100% of its parent's width */
-    height: 300px; /* Maintained height */
+    width: 100%;
+    height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f9f9f9;
+    margin-bottom: 20px;
 }
 
 .my-company-logo {
@@ -251,6 +246,8 @@
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 10px;
 }
 
 .my-company-link:hover {
@@ -258,14 +255,19 @@
 }
 
 .my-iframe {
-    border: 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
 }
 
-@media (max-width: 400px) {
-    .my-box {
-        width: 100%; /* Each box takes 100% of the container's width */
-    }
-}
 
 .footer {
     background-color: #f8f9fa;
