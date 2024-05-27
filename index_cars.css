@@ -247,6 +247,76 @@
   height:300px;
 }
 
+
+.my-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        .my-box {
+            width: 50%; /* Each box takes 50% of the container's width */
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .my-company-card,
+        .my-iframe {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%; /* Each box takes 100% of its parent's width */
+            height: 300px; /* Maintained height */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+        .my-company-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .my-company-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .my-company-address {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .my-company-link {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .my-company-link:hover {
+            background-color: #45a049;
+        }
+        .my-iframe {
+            border: 0;
+        }
+
+        @media (max-width: 400px) {
+            .my-box {
+                width: 100%; /* Each box takes 100% of the container's width */
+            }
+        }
+
+
 .footer {
     background-color: #f8f9fa;
     padding: 20px 0;
