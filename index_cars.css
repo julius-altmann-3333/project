@@ -75,6 +75,12 @@
     display: block !important;
 }
 
+#back-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .back-button {
     background-color: lightgrey;
     color: black;
@@ -92,7 +98,6 @@
     height: 16px;
     margin-right: 8px;
 }
-
 
 /* Hide the carousel indicators */
 .carousel-indicators {
