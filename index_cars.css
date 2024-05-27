@@ -77,7 +77,7 @@
 
 #back-button-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Align button to the left */
     margin-top: 20px;
 }
 
@@ -98,6 +98,7 @@
     height: 16px;
     margin-right: 8px;
 }
+
 
 /* Hide the carousel indicators */
 .carousel-indicators {
