@@ -274,6 +274,14 @@
     margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+    #google_maps_embde {
+        width: calc(100% - 20px); /* Adjust for margin */
+        margin: 0 10px 10px 0;
+    }
+}
+
+
 .footer {
     background-color: #f8f9fa;
     padding: 20px 0;
